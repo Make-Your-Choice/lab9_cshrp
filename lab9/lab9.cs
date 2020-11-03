@@ -7,11 +7,11 @@ namespace lab9_app {
 		public special() { //конструктор без параметров
 			this.bonus_num = 5;
 		}
-		public special(int a) {
+		public special(int a) { //конструктор с параметром для создания массива
 			this.bonus_num = a;
 			this.continuation = 1;
 		}
-		public void output() {
+		public void output() { //вывод
 			Console.WriteLine($"Number of bonuses: {bonus_num}\nContinuation: {continuation}");
 		}
 		public void reduce_bonus() { //сокращение числа бонусов
@@ -236,7 +236,7 @@ namespace lab9_app {
 			special[] spec_offer4 = new special[2];
 			for(int i = 0; i < 2; i ++)
 			{
-				spec_offer4[i] = new special(10);
+				spec_offer4[i] = new special(10); //вызов конструктора с одним параметром для создания массива
 			}
 			Console.WriteLine("\nSpecial offers\n");
 			for(int i = 0; i < 2; i ++)
